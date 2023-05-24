@@ -15,14 +15,36 @@ body {
 }
 
 /* Style container */
-div {
-  text-align: center;
+.s-container,
+.f-container {
+  text-align: left;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 400px;
 }
 
 /* Style heading */
 h1 {
-  font-size: 24px;
+  font-size: 32px;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  font-size: 32px;
   margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.f-text, .s-text {
+  font-family: "Arial", sans-serif;
+  margin: 20px 0;
 }
 
 /* Style form */
@@ -39,31 +61,52 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
+  font-family: "Arial", sans-serif;
 }
 
 .inputEmail {
-    width: 405px;
+  width: 405px;
   height: 30px;
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
+  font-family: "Arial", sans-serif;
 }
 
-/* Style form button */
-.btn {
-  width: 100px;
-  height: 30px;
+/* Style form button on index page */
+div button.btn {
+  width: 150px;
+  height: 40px;
   background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+}
+
+/* Style form button on failure page */
+.btn-TA {
+  width: 150px;
+  height: 40px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
   cursor: pointer;
 }
 
 /* Style form button on hover */
 .btn:hover {
   background-color: #45a049;
+}
+
+/* Style form button on hover for failure page */
+.btn-TA:hover {
+  background-color: #ff7f00;
 }
